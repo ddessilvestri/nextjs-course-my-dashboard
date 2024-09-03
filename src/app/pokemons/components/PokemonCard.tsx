@@ -10,6 +10,7 @@ interface Props{
 export const PokemonCard = ({pokemon}:Props) => {
 
     const {id,name} = pokemon;
+
     return (
         <div className="mx-auto right-0 mt-2 w-60">
             <div className="flex flex-col bg-white rounded overflow-hidden shadow-lg">
@@ -21,6 +22,7 @@ export const PokemonCard = ({pokemon}:Props) => {
                             width={100}
                             height={100}
                             alt={pokemon.name}
+                            priority={false}
                     />
                     <p className="pt-2 text-lg font-semibold text-gray-50 capitalize">{name}</p>
                     <p className="text-sm text-gray-100">John@Doe.com</p>
